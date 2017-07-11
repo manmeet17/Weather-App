@@ -1,0 +1,29 @@
+body{
+  background-color: rgba(50,100,250,0.7);
+  box-sizing: border-box;
+}
+.head{
+  font-size: 50px;
+  font-family: sans-serif;
+  color: rgba(30, 120, 120, 1);
+  text-align: center;
+  margin-top: 10vh;
+  font-weight: bolder;
+}
+
+input{
+  width: 10%;
+  height: 25px;
+  margin-left: 50%;
+  margin-top: 120px;
+  transform: translateX(-50%);
+}
+
+.img-box{
+  width: 200px;
+  height: 150px;
+  background-color: white;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  transition: 0.3s ease-in-out;
+}

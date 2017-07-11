@@ -6,6 +6,7 @@ var getUser=(id,callback) => {
   setTimeout(() =>{
     callback(user);
   },3000);
+callback("Fuck");
 };
 
 getUser(12,(user) =>{
