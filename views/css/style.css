@@ -1,22 +1,58 @@
+html{
+  margin: 0px;
+  height: 100%;
+  width: 100%;
+}
 body{
-  background-color: rgba(50,100,250,0.7);
+  min-height: inherit;
   box-sizing: border-box;
+  background-image: url("https://jpk-image-hosting.s3.amazonaws.com/weather-app/weather-night.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  position: relative;
+}
+.wrapper{
+  width: 400px;
+  height: 370px;
+  background-color: rgba(234, 234, 234, 0.6);
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 15vh;
 }
 .head{
-  font-size: 50px;
+  font-size: 35px;
   font-family: sans-serif;
-  color: rgba(30, 120, 120, 1);
+  color: #39434e;
   text-align: center;
-  margin-top: 10vh;
   font-weight: bolder;
 }
 
 input{
-  width: 10%;
-  height: 25px;
+  width: 150px;
+  height: 30px;
   margin-left: 50%;
-  margin-top: 120px;
+  margin-top: 50px;
   transform: translateX(-50%);
+  border: 0;
+  background: transparent;
+  border-bottom: 1px solid #39434e;
+  outline: none;
+  color: white;
+  transition: 0.3s ease-in-out;
+}
+input:focus{
+  border-bottom: 1px solid #fff;
+  font-size: 20px;
+}
+::-webkit-input-placeholder {
+  color: #39434e;
+  font-size: 20px;
+  opacity: 0.5;
+}
+::-webkit-input-placeholder :focus{
+  color: #39434e;
 }
 
 .img-box{
